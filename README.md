@@ -6,8 +6,8 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ### 1. Instalar mongodb Community Server
 * [Descargar MongoDB](https://www.mongodb.com/try/download/community?tck=docs_server)
 
-### 2. Instalar xampp (con php 7.3 en este caso)
-https://www.apachefriends.org/es/download.html
+### 2. Instalar XAMPP (con php 7.3)
+* [Descargar XAMPP](https://www.apachefriends.org/es/download.html)
 
 ### 3. Instalar extensión de mongoDB para version de php 7.3 (archivo en ext y agregar line en archivo ini)
 * [Instrucciones para instalar la extensión](https://www.php.net/manual/en/mongodb.installation.pecl.php)

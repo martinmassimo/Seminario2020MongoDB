@@ -1,5 +1,15 @@
 # Seminario2020MongoDB
 API REST MongoDB - PHP - XAMPP - Composer
+## Endpoints
+```
+GET     localhost/Seminario2020MongoDB/api/products
+POST    localhost/Seminario2020MongoDB/api/products
+DELETE  localhost/Seminario2020MongoDB/api/products/:id
+GET     localhost/Seminario2020MongoDB/api/products/byName/:name
+PUT     localhost/Seminario2020MongoDB/api/products
+
+```
+
 ## Tutorial de Instalación
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
@@ -17,13 +27,19 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ### 4. Instalar Composer
 * [Descargar Composer](https://getcomposer.org/download/)
 
-### 5. Clonar el repositorio actual
+### 5. Clonar el repositorio actual en la xampp\htdocs XAMPP
 ```
 git clone https://github.com/martinmassimo/Seminario2020MongoDB.git
 ```
 
 ### 6. Instalar biblioteca de MongoDB (1.0.0) para php con Composer en el directorio del repositorio clonado
 * [Instrucciones para instalar la biblioteca](https://www.php.net/manual/es/mongodb.tutorial.library.php)
+
+En este caso el repositorio ya cuenta con la dependecia instalada de MongoDB por lo que solo es necesario el siguiente comando para que se intale:
+```
+composer install
+```
+
 
 ### 7. Comandos MongoDB para inicializar las BBDD y las colecciones necesarias
 ```

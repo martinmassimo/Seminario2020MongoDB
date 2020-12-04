@@ -22,19 +22,19 @@ DELETE  localhost/Seminario2020MongoDB/api/sales/:id
 ```
 {
   nombre : "silla", 
+  descripcion: "mesa de madera de 60cm", 
   precio: 200,
   stock : 10,
-  descripcion: "mesa de madera de 60cm", 
   createdAt : new Date()
 }
 ```
 ### Sales:
 ```
 {
+  producto : ObjectId("5fca21c0f1656d4c23a828e4"),
   cantidad: 1,
   precioTotal : 200,
   direccionEntrega : "Sarmiento 850",
-  producto : ObjectId("5fca21c0f1656d4c23a828e4"),
   createdAt : new Date()
 }
 ```

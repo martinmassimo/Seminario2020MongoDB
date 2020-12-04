@@ -1,6 +1,7 @@
 <?php
 require_once("ApiController.php");
 require_once("./Models/ProductsModel.php");
+require_once("./Models/SalesModel.php");
 require_once("JSONView.php");
 
 class ProductsApiController extends ApiController{
@@ -52,6 +53,7 @@ class ProductsApiController extends ApiController{
         }
     }
     // Actualiza el producto recibiendo el producto como objeto JSON con _id y campos modificados
+    // Se omite el _id para evitar error en MongoDB intentado actualizar ese campo
     public function updateProduct(){
         $product = $this->getData();
         $id = \MongoDB\BSON\toPHP(\MongoDB\BSON\fromJson(json_encode($product)))->_id;

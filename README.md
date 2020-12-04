@@ -1,13 +1,20 @@
 # Seminario2020MongoDB
 API REST MongoDB - PHP - XAMPP - Composer
 ## Endpoints
+### Recurso Products:
 ```
 GET     localhost/Seminario2020MongoDB/api/products
-POST    localhost/Seminario2020MongoDB/api/products
-DELETE  localhost/Seminario2020MongoDB/api/products/:id
 GET     localhost/Seminario2020MongoDB/api/products/byName/:name
+POST    localhost/Seminario2020MongoDB/api/products
 PUT     localhost/Seminario2020MongoDB/api/products
-
+DELETE  localhost/Seminario2020MongoDB/api/products/:id
+```
+### Recurso Products:
+```
+GET     localhost/Seminario2020MongoDB/api/sales
+POST    localhost/Seminario2020MongoDB/api/sales
+PUT     localhost/Seminario2020MongoDB/api/sales
+DELETE  localhost/Seminario2020MongoDB/api/sales/:id
 ```
 
 ## Tutorial de Instalación
@@ -47,7 +54,6 @@ mongo
 use ecommerce
 db.createColleccions("products")
 db.createColleccions("sales")
-db.createColleccions("clients")
 ```
 
 ### 8. Ejecutar XAMPP para terminar de poner en funcionamiento la API

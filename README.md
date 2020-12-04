@@ -9,7 +9,7 @@ POST    localhost/Seminario2020MongoDB/api/products
 PUT     localhost/Seminario2020MongoDB/api/products
 DELETE  localhost/Seminario2020MongoDB/api/products/:id
 ```
-### Recurso Products:
+### Recurso Sales:
 ```
 GET     localhost/Seminario2020MongoDB/api/sales
 POST    localhost/Seminario2020MongoDB/api/sales

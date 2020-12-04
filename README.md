@@ -1,7 +1,7 @@
 # Seminario2020MongoDB
 API REST MongoDB - PHP - XAMPP - Composer
-## Endpoints
-### Recurso Products:
+## Endpoints de los recursos
+### Products:
 ```
 GET     localhost/Seminario2020MongoDB/api/products
 GET     localhost/Seminario2020MongoDB/api/products/byName/:name
@@ -9,12 +9,34 @@ POST    localhost/Seminario2020MongoDB/api/products
 PUT     localhost/Seminario2020MongoDB/api/products
 DELETE  localhost/Seminario2020MongoDB/api/products/:id
 ```
-### Recurso Sales:
+### Sales:
 ```
 GET     localhost/Seminario2020MongoDB/api/sales
 POST    localhost/Seminario2020MongoDB/api/sales
 PUT     localhost/Seminario2020MongoDB/api/sales
 DELETE  localhost/Seminario2020MongoDB/api/sales/:id
+```
+
+## Estructuras JSON de los recursos
+### Products:
+```
+{
+  nombre : "silla", 
+  precio: 200,
+  stock : 10,
+  descripcion: "mesa de madera de 60cm", 
+  createdAt : new Date()
+}
+```
+### Sales:
+```
+{
+  cantidad: 1,
+  precioTotal : 200,
+  direccionEntrega : "Sarmiento 850",
+  producto : ObjectId("5fca21c0f1656d4c23a828e4"),
+  createdAt : new Date()
+}
 ```
 
 ## Tutorial de Instalación
